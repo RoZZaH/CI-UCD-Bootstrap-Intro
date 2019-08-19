@@ -10,13 +10,29 @@
 </head>
 
 <body>
+    <!-- fluid at sm -->
+    <nav class="navbar navbar-light bg-light navbar-expand-sm">
+        <a href="#" class="navbar-brand">Whiskey Drop</a>
+        <ul class="navbar-nav mr-auto">
+            <li class="active nav-item mr-2"><a href="#" class="nav-link">Home</a></li>
+            <li class="nav-item mr-2"><a href="#" class="nav-link">About</a></li>
+            <li class="nav-item mr-2 d-block d-sm-none"><a href="#">Sign In/Sign Up</a></li>
+        </ul>
+        <div class="d-none d-md-block">
+            <p class="navbar-text my-auto mr-2"><i>Great Whiskey delivered to your door!</i></p>
+            <a href="#">Sign In/Sign Up</a>
+        </div>
+    </nav>
     <article class="container">
         <!-- CALLOUT -->
         <div class="row">
             <div class="col-12">
-                <section class="callout">
+                <section class="callout jumbotron mt-3 text-center">
                     <h1>The finest whiskeys delivered to your doorstep.</h1>
-                    <p claas="lead">Sign up today to start receiving the world's best whiskey. <s>&euro;19.99</s> <strong><mark>First one is free!</mark></strong></p>
+                    <p claas="lead">Sign up today to start receiving the world's best whiskeys every month.
+                     <s class="d-none d-sm-inline">&euro;19.99</s> 
+                     <span class="d-inline d-sm-none"><br></span> 
+                     <strong><mark>First one is free!</mark></strong></p>
                     <button class="btn btn-success btn-lg">Sign Up!</button>
                     <p class="text-muted"><small>You must be over 18 to join our service. Please drink responsibly.</small></p>
                 </section>
@@ -28,7 +44,7 @@
 
         <section class="quotes">
             <div class="row">
-                <div class="col-12">
+                <div class="col-12 my-5">
                     <h2 class="text-uppercase">Quotes:</h2>
                 </div>
             </div>
@@ -52,7 +68,7 @@
         <!-- FEATURES -->
         <section class="features">
             <div class="row">
-                <div class="col-12">
+                <div class="col-12 my-5">
                     <h2 class="text-uppercase">Features:</h2>
                 </div>
             </div>
@@ -71,7 +87,8 @@
                         <p><a class="btn btn-sm btn-light" href="#">Read More</a></p>
                     </div>
                 </div>
-                <div class="col-12 d-md-none d-lg-block col-lg-4"><!-- note display class md-none and second display class for large displays -->
+                <div class="col-12 d-md-none d-lg-block col-lg-4">
+                    <!-- note display class md-none and second display class for large displays -->
                     <div class="feature">
                         <h3>Feature 3</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae ratione, distinctio velit provident quibusdam, praesentium delectus modi id dolorem sint aut repellat sequi nihil, accusantium expedita porro eaque iusto, architecto.</p>
